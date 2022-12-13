@@ -11,7 +11,7 @@ function Home(){
         async function loadFilmes(){
             const response = await api.get("movie/now_playing", {
                 params:{
-                    api_key: process.env.API_KEY,
+                    api_key: API_KEY,
                     language: "pt-br",
                     page:1,
                 }
